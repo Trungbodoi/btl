@@ -1,0 +1,128 @@
+    h2{
+        color: var(--text-color);
+        line-height: 3rem;
+        background-color: var(--base-color);
+    }
+  
+  
+  #spin_the_wheel {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+  
+  #wheel {
+    display: block;
+    max-width: 90vw; /* Đảm bảo bánh xe vừa với màn hình nhỏ */
+    max-height: 90vw;
+    width: 100%;
+    height: auto;
+  }
+  
+  #spin {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    margin: -15%;
+    background: #fff;
+    color: #fff;
+    box-shadow:
+      0 0 0 8px currentColor,
+      0 0px 15px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: 0.8s;
+  }
+  
+  #spin::after {
+    content: "";
+    position: absolute;
+    top: -17px;
+    border: 10px solid transparent;
+    border-bottom-color: currentColor;
+    border-top: none;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+/* Popup thông báo */
+/* Bố cục cho thông báo */
+#notification {
+    display: none; /* Ẩn theo mặc định */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Giữa màn hình */
+    background: rgba(255, 255, 255, 0.9); /* Nền trắng với độ mờ */
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--base-color);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000; /* Để ở trên cùng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;/* Đổ bóng */
+}
+
+/* Mờ nền xung quanh */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Nền đen mờ 50% */
+    display: none; /* Ẩn mặc định */
+    z-index: 1;
+}
+
+/* Cài đặt cho nút đóng */
+#notification button {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    border: 1px solid var(--text-color) ;
+    color: var(--text-color);
+    background-color: var(--base-color);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+#notification button:hover{
+  color: var(--base-color);
+  background-color: var(--text-color);
+}
+
+
+
+  @media (max-width: 768px) {
+    #spin {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #spin {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+  
