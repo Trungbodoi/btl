@@ -600,7 +600,7 @@ let data = [
     {
         id: "book32",
         bookname: "Romeo and Juliet",
-        image: "../data/images/Romeo.jpg",
+        image: "../data/images/romeo.jpg",
         author: "William Shakespeare",
         nxb: "Puffin Classics",
         year: 2024,
