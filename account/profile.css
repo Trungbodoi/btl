@@ -5,15 +5,20 @@
     padding: 40px;
     color: var(--text-color);
 }
+.profile-container > *{
+    flex: 1;
+}
 
 .user{
     background-color: var(--base-color);
     padding: 20px;
     border: 2px solid var(--text-color);
+    align-self: flex-start;
 }
 
 .user input{
     padding: 8px;
+    max-width: 100%;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -77,6 +82,7 @@
 }
 #image-upload{
     width: 100%;
+    background-color: var(--base-color);
 }
 textarea{
     width: 100%;
