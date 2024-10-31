@@ -7,6 +7,7 @@ const productId = urlParams.get('id');
 const product = data.find(p => p.id == productId);
 
 if (product) {
+    document.title = product.bookname;
     document.getElementById('bookname').textContent = product.bookname;
     document.getElementById('bookimage').src = product.image;
     document.getElementById('author').textContent = product.author;
