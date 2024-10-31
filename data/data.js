@@ -695,7 +695,7 @@ let data = [
     {
         id: "book37",
         bookname: "Grimgar - Ảo Ảnh Và Tro Tàn - Tập 10",
-        image: "../ad/ando5.png",
+        image: "../data/images/ando5.png",
         author: "Ao Jyumonji",
         nxb: "Kim Đồng",
         year: 2021,
@@ -714,7 +714,7 @@ let data = [
     {
         id: "book38",
         bookname: "Grimgar - Ảo Ảnh Và Tro Tàn - Tập 7",
-        image: "../ad/ando4.png",
+        image: "../data/images/ando4.png",
         author: "Ao Jyumonji",
         nxb: "Kim Đồng",
         year: 2020,
@@ -733,7 +733,7 @@ let data = [
     {
         id: "book39",
         bookname: "Grimgar - Ảo Ảnh Và Tro Tàn - Tập 11",
-        image: "../ad/ando6.png",
+        image: "../data/images/ando6.png",
         author: "Ao Jyumonji",
         nxb: "Kim Đồng",
         year: 2021,
@@ -752,7 +752,7 @@ let data = [
     {
         id: "book40",
         bookname: "86-EIGHTY SIX- Ep.7",
-        image: "../ad/ando2.png",
+        image: "../data/images/ando2.png",
         author: "ASATO ASATO",
         nxb: "Hồng Đức",
         year: 2023,
@@ -771,7 +771,7 @@ let data = [
     {
         id: "book41",
         bookname: "86-EIGHTY SIX- Ep.6",
-        image: "../ad/ando1.png",
+        image: "../data/images/ando1.png",
         author: "ASATO ASATO",
         nxb: "Hồng Đức",
         year: 2022,
@@ -790,7 +790,7 @@ let data = [
     {
         id: "book42",
         bookname: "86-EIGHTY SIX- Ep.11",
-        image: "../ad/ando3.png",
+        image: "../data/images/ando3.png",
         author: "ASATO ASATO",
         nxb: "Hồng Đức",
         year: 2024,
@@ -809,7 +809,7 @@ let data = [
     {
         id: "book43",
         bookname: "Clean Code - Mã Sạch Và Con Đường Trở Thành Lập Trình Viên Giỏi (Tái Bản 2023)",
-        image: "../ad/bill4.png",
+        image: "../data/images/bill4.png",
         author: "Nguyễn Văn Trung",
         nxb: "Dân Trí",
         year: 2023,
@@ -828,7 +828,7 @@ let data = [
     {
             id: "book44",
             bookname: "Sách - Lập Trình JAVA Căn Bản",
-            image: "../ad/bill5.png",
+            image: "../data/images/bill5.png",
             author: "Phạm Văn Trung",
             nxb: "Xây Dựng",
             year: 2023,
@@ -847,7 +847,7 @@ let data = [
     {
         id: "book45",
         bookname: "JavaScript & jQuery: Interactive Front-End Development",
-        image: "../ad/bill1.png",
+        image: "../data/images/bill1.png",
         author: "Jon Duckett",
         nxb: "Penguin Random House",
         year: 2014,
@@ -866,7 +866,7 @@ let data = [
     {
         id: "book46",
         bookname: "Sách - Đường Vào Lập Trình Python",
-        image: "../ad/bill2.png",
+        image: "../data/images/bill2.png",
         author: "Nhiều tác giả",
         nxb: "Đại Học Quốc Gia Hà Nội",
         year: 2024,
@@ -885,7 +885,7 @@ let data = [
     {
         id: "book47",
         bookname: "Sách - Kỹ Thuật Lập Trình C Và C# Từ Cơ Bản Đến Nâng Cao",
-        image: "../ad/bill3.png",
+        image: "../data/images/bill3.png",
         author: "GS. Phạm Văn Ất",
         nxb: "Bách Khoa Hà Nội",
         year: 2024,
@@ -904,7 +904,7 @@ let data = [
     {
         id: "book48",
         bookname: "Too Many Losing Heroines! (Light Novel) Vol. 1",
-        image: "../ad/bill6.png",
+        image: "../data/images/bill6.png",
         author: " Takibi Amamori",
         nxb: "Airship",
         year: 2024,
@@ -923,7 +923,7 @@ let data = [
     {
         id: "book49",
         bookname: "Dandadan, Vol. 6",
-        image: "../ad/bill7.png",
+        image: "../data/images/bill7.png",
         author: "Yukinobu Tatsu",
         nxb: "VIZ Media LLC",
         year: 2024,
@@ -942,7 +942,7 @@ let data = [
     {
         id: "book50",
         bookname: "Kính Vạn Hoa - Tập 6 (Tái Bản 2022)",
-        image: "../ad/bill8.png",
+        image: "../data/images/bill8.png",
         author: "Nguyễn Nhật Ánh",
         nxb: "Kim Đồng",
         year: 2022,
@@ -961,7 +961,7 @@ let data = [
     {
         id: "book51",
         bookname: "Tiểu Sử Các Quốc Gia Qua Góc Nhìn Lầy Lội",
-        image: "../ad/bill9.png",
+        image: "../data/images/bill9.png",
         author: "Sai Lei",
         nxb: "Dân Trí",
         year: 2021,
@@ -980,7 +980,7 @@ let data = [
     {
         id: "book52",
         bookname: "Truyền Kỳ Về Tình Yêu Của Quỷ - Chàng Quỷ Lang Thang Và Nàng Công Chúa Định Mệnh",
-        image: "../ad/bill10.png",
+        image: "../data/images/bill10.png",
         author: "Risa Sunakawa",
         nxb: "Thế Giới",
         year: 2023,
