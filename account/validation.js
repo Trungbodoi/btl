@@ -6,27 +6,50 @@ const repeat_password_input = document.getElementById('repeat-password-input')
 const error_message = document.getElementById('error-message')
 
 form.addEventListener('submit', (e) => {
-  let errors = []
+  let errors = [];
 
-  if(firstname_input){
-    // If we have a firstname input then we are in the signup
-    errors = getSignupFormErrors(firstname_input.value, email_input.value, password_input.value, repeat_password_input.value)
-  }
-  else{
-    // If we don't have a firstname input then we are in the login
-    errors = getLoginFormErrors(email_input.value, password_input.value)
+  if (firstname_input) {
+    // Đăng ký
+    errors = getSignupFormErrors(
+      firstname_input.value,
+      email_input.value,
+      password_input.value,
+      repeat_password_input.value
+    );
+  } else {
+    // Đăng nhập
+    errors = getLoginFormErrors(email_input.value, password_input.value);
   }
 
-  if(errors.length > 0){
-    // If there are any errors
-    e.preventDefault()
-    error_message.innerText  = errors.join(". ")
-  }else {
+  if (errors.length > 0) {
     e.preventDefault();
-    localStorage.setItem('isLoggedIn', 'true');
+    error_message.innerText = errors.join(". ");
+  } else {
+    e.preventDefault();
+    setCookie('isLoggedIn', 'true', 1); // Cookie hết hạn sau 1 ngày
     window.location.href = 'profile.html';
   }
-})
+});
+
+// Hàm tạo cookie với thời gian hết hạn
+function setCookie(name, value, days) {
+  const date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // `days` là số ngày
+  const expires = "expires=" + date.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+// Hàm đọc giá trị cookie
+function getCookie(name) {
+  const cookies = document.cookie.split("; ");
+  for (const cookie of cookies) {
+    const [key, value] = cookie.split("=");
+    if (key === name) {
+      return decodeURIComponent(value);
+    }
+  }
+  return null; // Trả về null nếu cookie không tồn tại
+}
 
 function getSignupFormErrors(firstname, email, password, repeatPassword){
   let errors = []
