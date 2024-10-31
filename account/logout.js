@@ -1,5 +1,4 @@
 function logout() {
-    localStorage.removeItem('isLoggedIn');
-    window.location.href = 'login.html'; // Quay lại trang đăng nhập
-  }
-
+  document.cookie = "isLoggedIn=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  window.location.href = 'login.html';
+}
