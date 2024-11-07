@@ -36,9 +36,9 @@ function validForm(event) {
   }
 
   // Kiểm tra số điện thoại
-  const phonePattern = /^[0-9]{10,11}$/;
+  const phonePattern = /^0[0-9]{9}$/;
   if (!phonePattern.test(phone)) {
-      document.getElementById("phone_error").textContent = "SĐT không hợp lệ (10-11 chữ số)";
+      document.getElementById("phone_error").textContent = "SĐT không hợp lệ";
       isValid = false;
   } else {
       document.getElementById("phone_error").textContent = "";
