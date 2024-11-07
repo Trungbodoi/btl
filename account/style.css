@@ -22,7 +22,7 @@ button{
   box-sizing: border-box;
   background-color: var(--base-color);
   min-height: 800px;
-  width: max(40%, 500px);
+  width: min(600px, 100%);
   padding: 10px;
   border: 5px solid var(--accent-color);
   border-radius: 50px;
@@ -131,11 +131,6 @@ a{
   color: var(--accent-color);
 }
 
-@media(max-width: 1100px){
-  .wrapper{
-    width: min(600px, 100%);
-  }
-}
 form div.incorrect label{
   background-color: var(--error-color);
 }
